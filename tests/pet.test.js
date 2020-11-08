@@ -80,7 +80,6 @@ describe('walk', () => {
 describe('feed', () => {
     it('Pet hunger should decrease by 3 when fed', () => {
         const pet = new Pet('fido');
-
         pet.hunger = 10
         pet.feed()
 
@@ -130,5 +129,34 @@ describe('checkUp', () => {
         pet.fitness = 10
         pet.hunger = 0
         expect(pet.checkUp()).toEqual('I feel great!')
+    });
+});
+
+describe('isAlive', () => {
+    it('tells us pet is dead if it is over 30, too hungry and too unfit', () => {
+        const pet = new Pet('fido');
+        pet.fitness = -1;
+        pet.hunger = 11;
+        pet.age = 31;
+        expect(pet.isAlive).toEqual(false)
+    });
+});
+
+describe('feed_error', () => {
+    it('throws an error if the pet is not alive', () => {
+        const pet = new Pet('Dave');
+
+        pet.age = 31;
+
+        expect(() => pet.feed()).toThrow('Your pet is no longer alive :(');
+    });
+});
+
+describe('pet_parent', () => {
+    it('ensures that the parent pet has successfully inherited the child pet', () => {
+        let Dave = new Pet('Dave');
+        let Amelia = new Pet('Amelia');
+        Dave.haveBaby(Amelia);
+        expect(Dave.children).toEqual(Amelia);
     });
 });
