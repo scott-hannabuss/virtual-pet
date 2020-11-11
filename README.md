@@ -24,11 +24,11 @@ Git and Github
 Node and NPM 
 Jest
 
-<h2> Status <h/2>
+<h2> Status </h2>
 
 Project is completed
 
-<Authors>
+<h2>Authors</h2>
 
 Scott Hannabuss
 
