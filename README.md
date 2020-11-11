@@ -6,7 +6,7 @@ Furthermore, the project acted as an introduction to TDD, as we were required to
 
 <h2> Running this project </h2>
 
-If you would like to run this project, ensure you have Node.js installed on your machine, and then fork the repo to your local machine 
+If you would like to run this project, ensure you have Node.js installed on your machine, and then fork the repo to your local machine. 
 
 Now run Node.js inside the repo to install the project dependencies, including Jest which will allow you to run and write tests for the project. 
 
@@ -20,9 +20,9 @@ Now run Node.js inside the repo to install the project dependencies, including J
 
 <h2> Technologies </h2>
 
-Git and Github
-Node and NPM 
-Jest
+<br>Git and Github</br>
+<br>Node and NPM</br>
+<br>Jest</br>
 
 <h2> Status </h2>
 
@@ -34,9 +34,7 @@ Scott Hannabuss
 
 <h2> Acknowledgements </h2>
 
-Manchester Codes, the bootcamp who designed the project. 
-
-This project will be built using javascript as part of their OOP course. 
+Manchester Codes, the bootcamp who designed the project as part of their OOP learning module. 
 
 
 
